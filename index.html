@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Portfolio project - RWD</title>
   </head>
@@ -19,12 +22,24 @@
           title="Company"
           class="logo"
         />
+        <!-- Alternative hamburger -->
         <input
           id="hamburger"
           type="checkbox"
           class="hamburger_alternative-checkbox"
         />
         <label for="hamburger" class="hamburger_alternative"></label>
+
+        <!-- end -->
+
+        <!-- JS -->
+        <!-- <img
+          class="hamburger_open"
+          src="./assets/hamburger_open.png"
+          alt="Menu"
+          title="Menu"
+        /> -->
+        <!-- end -->
         <nav class="navigation">
           <img
             class="hamburger_close"
@@ -32,30 +47,64 @@
             alt="Menu"
             title="Menu"
           />
-          <ul class="navigation__links">
-            <li>
-              <a class="navigation__links_element" href="#">home</a>
-            </li>
-            <li>
-              <a class="navigation__links_element" href="#">visit</a>
-            </li>
-            <li>
-              <a class="navigation__links_element" href="#">exhibitions</a>
-            </li>
-            <li>
-              <a class="navigation__links_element" href="#"
-                >programs & events</a
-              >
-            </li>
-            <li>
-              <a class="navigation__links_element" href="#">store</a>
-            </li>
-            <li>
-              <a class="navigation__links_element" href="#">membership</a>
-            </li>
-          </ul>
+
+          <img
+            src="./assets/decoration.png"
+            alt="Decoration"
+            title="Decoration"
+            class="decoration"
+          />
+          <div class="navigation__collection">
+            <h3 class="menu">Menu</h3>
+            <ul class="navigation__links">
+              <li>
+                <a class="navigation__links_element" href="#">home</a>
+              </li>
+              <li>
+                <a class="navigation__links_element" href="#">visit</a>
+              </li>
+              <li>
+                <a class="navigation__links_element" href="#">exhibitions</a>
+              </li>
+              <li>
+                <a class="navigation__links_element" href="#"
+                  >programs &#38; events</a
+                >
+              </li>
+              <li>
+                <a class="navigation__links_element" href="#">store</a>
+              </li>
+              <li>
+                <a class="navigation__links_element" href="#">membership</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </article>
     </header>
+
+    <section class="introduction">
+      <article class="container introduction__container">
+        <div class="introduction__elements">
+          <div class="introduction__description">
+            <h1 class="introduction__header">A beautiful adventure awaits</h1>
+            <p class="introduction__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              facilisis nunc
+            </p>
+            <span class="introduction__buttons">
+              <button class="primary_button_small">buy tickets</button>
+              <button class="secondary_button_small">learn more</button>
+            </span>
+          </div>
+          <img
+            src="./assets/main_photo.png"
+            alt="Garden"
+            title="Garden"
+            class="introduction__photo"
+          />
+        </div>
+      </article>
+    </section>
   </body>
 </html>

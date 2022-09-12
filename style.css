@@ -39,7 +39,6 @@ button {
 
 .container {
   width: 100%;
-  box-sizing: border-box;
 }
 
 .header_container {
@@ -50,7 +49,7 @@ button {
   align-items: center;
 }
 
-.navigation__links {
+.navigation {
   display: none;
 }
 
@@ -76,7 +75,6 @@ button {
 
 .hamburger_alternative-checkbox:checked ~ .navigation {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   top: 0;
@@ -84,4 +82,210 @@ button {
   bottom: 0;
   left: 0;
   background: #475f45;
+  color: #fff;
+}
+
+.hamburger_close {
+  display: none;
+}
+
+/* JS */
+/* .hamburger_open {
+  width: 24px;
+}
+.hamburger_close {
+  width: 24px;
+  background-color: green;
+  position: absolute;
+  top: 22px;
+  right: 15px;
+} */
+/* end */
+
+.decoration {
+  position: absolute;
+  width: 434px;
+  left: 50%;
+  top: 60%;
+}
+
+.navigation__collection {
+  text-align: center;
+}
+
+.menu {
+  color: #fff;
+  padding: 32px 0 72px 0;
+}
+
+.navigation__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation__links_element:hover {
+  border: #fff 2px solid;
+  font-weight: 700;
+}
+
+.navigation__links_element {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 33.5px;
+  letter-spacing: 2px;
+}
+
+.navigation__links li:first-child {
+  font-weight: 700;
+}
+
+.introduction__container {
+  padding: 0 15px;
+  margin-top: 26px;
+  margin-bottom: 60px;
+}
+
+.introduction__elements {
+  text-align: center;
+}
+
+.introduction__header {
+  color: #343d33;
+  text-transform:capitalize;
+}
+
+.introduction__paragraph {
+  color: #414840;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 300;
+  padding: 16px 0 24px 0;
+  text-transform:capitalize;
+}
+
+.introduction__photo {
+  width: 100%;
+}
+
+.primary_button_small {
+  background-color: #475f45;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 0;
+  font-weight: 700;
+}
+
+.secondary_button_small {
+  background-color: #fff;
+  color: #475f45;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border: #475f45 2px solid;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+
+
+@media all and (min-width:768px) {
+  .introduction__header {
+    font-size: 45px;
+    margin-bottom: 74px;
+  }
+  .introduction__paragraph {
+    font-size: 22px;
+    padding: 0 0 48px 0;
+  }
+  .primary_button_small {
+    margin-right: 8px;
+    padding: 20px 42px;
+  }
+  .secondary_button_small {
+    margin-left: 8px;
+    margin-bottom: 48px;
+    padding: 20px 42px;
+  }
+  .introduction__photo {
+    width: 388px;
+  }
+  .introduction__container {
+    margin-top: 56px;
+    margin
+    -bottom: 57px;
+  }
+  .menu {
+    font-size: 34px;
+  }
+  .decoration {
+    width: 750px;
+    left: 60%;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 0;
+  }
+  .logo {
+    width: 263px;
+  }
+  .hamburger_alternative, .hamburger_alternative-checkbox, .hamburger_close, .decoration {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation__links {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .navigation__links_element {
+    color: #414840;
+    font-weight: 700;
+    border: transparent 2px solid;
+    padding: 15px 30px;
+  }
+  .navigation__links_element:hover {
+    border: #475F45 2px solid;
+  }
+  .introduction__container {
+    margin-top: 49px;
+    margin-bottom: 122px;
+    padding: 0;
+  }
+  .introduction__elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .introduction__description {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    align-items: flex-start;
+    text-align: initial;
+  }
+  .introduction__header {
+    margin-bottom: 16px;
+    font-size: 57px;
+  }
+  .introduction__paragraph {
+    padding-bottom: 32px;
+    font-size: 25px;
+  }
+  .secondary_button_small {
+    margin-bottom: 0;
+  }
 }
