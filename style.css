@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header {
+  padding: 0 15px;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header_container {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__links {
+  display: none;
+}
+
+.logo {
+  width: 215px;
+}
+
+.hamburger_alternative {
+  background-image: url("./assets/hamburger_open.png");
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  z-index: 1;
+}
+
+.hamburger_alternative-checkbox {
+  display: none;
+}
+
+.hamburger_alternative-checkbox:checked + .hamburger_alternative {
+  background-image: url("./assets/hamburger_close.png");
+}
+
+.hamburger_alternative-checkbox:checked ~ .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #475f45;
+}

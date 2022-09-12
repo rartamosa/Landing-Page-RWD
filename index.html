@@ -4,8 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Portfolio project - RWD</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <article class="container header_container">
+        <img
+          src="./assets/logo.png"
+          alt="Company"
+          title="Company"
+          class="logo"
+        />
+        <input
+          id="hamburger"
+          type="checkbox"
+          class="hamburger_alternative-checkbox"
+        />
+        <label for="hamburger" class="hamburger_alternative"></label>
+        <nav class="navigation">
+          <img
+            class="hamburger_close"
+            src="./assets/hamburger_close.png"
+            alt="Menu"
+            title="Menu"
+          />
+          <ul class="navigation__links">
+            <li>
+              <a class="navigation__links_element" href="#">home</a>
+            </li>
+            <li>
+              <a class="navigation__links_element" href="#">visit</a>
+            </li>
+            <li>
+              <a class="navigation__links_element" href="#">exhibitions</a>
+            </li>
+            <li>
+              <a class="navigation__links_element" href="#"
+                >programs & events</a
+              >
+            </li>
+            <li>
+              <a class="navigation__links_element" href="#">store</a>
+            </li>
+            <li>
+              <a class="navigation__links_element" href="#">membership</a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </header>
+  </body>
 </html>
