@@ -22,23 +22,13 @@
           title="Company"
           class="logo"
         />
-        <!-- Alternative hamburger -->
-        <input
-          id="hamburger"
-          type="checkbox"
-          class="hamburger_alternative-checkbox"
-        />
-        <label for="hamburger" class="hamburger_alternative"></label>
 
-        <!-- end -->
-
-        <!-- JS -->
-        <!-- <img
+        <img
           class="hamburger_open"
           src="./assets/hamburger_open.png"
           alt="Menu"
           title="Menu"
-        /> -->
+        />
         <!-- end -->
         <nav class="navigation">
           <img
@@ -52,7 +42,7 @@
             src="./assets/decoration.png"
             alt="Decoration"
             title="Decoration"
-            class="decoration"
+            class="navigation__decoration"
           />
           <div class="navigation__collection">
             <h3 class="menu">Menu</h3>
@@ -67,9 +57,9 @@
                 <a class="navigation__links_element" href="#">exhibitions</a>
               </li>
               <li>
-                <a class="navigation__links_element" href="#"
-                  >programs &#38; events</a
-                >
+                <a class="navigation__links_element" href="#">
+                  programs &#38; events
+                </a>
               </li>
               <li>
                 <a class="navigation__links_element" href="#">store</a>
@@ -97,14 +87,99 @@
               <button class="secondary_button_small">learn more</button>
             </span>
           </div>
-          <img
+          <!-- <img
             src="./assets/main_photo.png"
             alt="Garden"
             title="Garden"
             class="introduction__photo"
-          />
+          /> -->
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="./assets/main_photo_mobile.png"
+            />
+            <source
+              media="(max-width:1199px)"
+              srcset="./assets/main_photo_tablet.png"
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="./assets/main_photo_desktop.png"
+            />
+            <img
+              src="./assets/main_photo_desktop.png"
+              alt="Garden"
+              title="Garden"
+              class="introduction__photo"
+            />
+          </picture>
+        </div>
+      </article>
+    </section>
+    <section class="discover">
+      <article class="container discover__container">
+        <!-- <picture>
+          <source media="(max-width:767px)"
+          src="./assets/decoration2_mobile.png">
+          <source media="(max-width:1199px)"
+          src="./assets/decoration2_tablet.png">
+          <source media="(min-width:1200px)"
+          src="./assets/decoration2_desktop.png"> -->
+          <img 
+          src="./assets/decoration2_desktop.png"
+          alt="Decoration"
+          title="Decoration"
+          class="discover__decoration">
+        <!-- </picture> -->
+        <div class="discover__collection">
+            <picture>
+              <source
+                media="(max-width:767px)"
+                src="./assets/discover_pots_mobile.png"
+              />
+              <source
+                media="(max-width:1199px)"
+                src="./assets/discover_pots_tablet.png"
+              />
+              <source
+                media="(min-width:1200px)"
+                src="./assets/discover_pots_desktop.png"
+              />
+              <img
+                src="./assets/discover_pots_desktop.png"
+                alt="Interior"
+                title="Interior"
+                class="discover__photo1"
+              />
+            </picture>
+            <div class="discover__description">
+              <h2 class="discover__header">Discover yourself with nature</h2>
+              <p class="discover__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Tincidunt facilisis nunc
+              </p>
+              <button class="secondary_button_small button_alternative">learn more</button>
+            </div>
+          <picture>
+            <source media="(max-width:767px)"
+            src="./assets/discover_chairs_mobile.png"
+            >
+            <source media="(max-width:1199px)"
+            src="./assets/discover_chairs_tablet.png"
+            >
+            <source media="(min-width:1200px)"
+            src="./assets/discover_chairs_desktop.png"
+            >
+            <img 
+            src="./assets/discover_chairs_desktop.png" 
+            alt="Interior"
+            title="Interior"
+            class="discover__photo2">
+          </picture>
         </div>
       </article>
     </section>
   </body>
+  <script src="./app.js"></script>
 </html>

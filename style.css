@@ -31,14 +31,18 @@ h3 {
 button {
   font-size: 14px;
   font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .header {
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .container {
   width: 100%;
+  padding: 0 15px;
 }
 
 .header_container {
@@ -57,52 +61,33 @@ button {
   width: 215px;
 }
 
-.hamburger_alternative {
-  background-image: url("./assets/hamburger_open.png");
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  z-index: 1;
-}
-
-.hamburger_alternative-checkbox {
-  display: none;
-}
-
-.hamburger_alternative-checkbox:checked + .hamburger_alternative {
-  background-image: url("./assets/hamburger_close.png");
-}
-
-.hamburger_alternative-checkbox:checked ~ .navigation {
+.navigation_open {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: #475f45;
   color: #fff;
+  overflow: hidden;
+}
+
+.hamburger_open {
+  width: 24px;
+  height: 24px;
 }
 
 .hamburger_close {
-  display: none;
-}
-
-/* JS */
-/* .hamburger_open {
   width: 24px;
-}
-.hamburger_close {
-  width: 24px;
-  background-color: green;
+  height: 24px;
   position: absolute;
-  top: 22px;
   right: 15px;
-} */
-/* end */
+  top: 33px;
+}
 
-.decoration {
+.navigation__decoration {
   position: absolute;
   width: 434px;
   left: 50%;
@@ -137,10 +122,15 @@ button {
   text-decoration: none;
   padding: 15px 33.5px;
   letter-spacing: 2px;
+  font-size: 14px;
 }
 
 .navigation__links li:first-child {
   font-weight: 700;
+}
+
+.navigation__links li:last-of-type {
+  margin-top: 15px;
 }
 
 .introduction__container {
@@ -149,13 +139,17 @@ button {
   margin-bottom: 60px;
 }
 
+.introduction__photo {
+  margin-top: 56px;
+}
+
 .introduction__elements {
   text-align: center;
 }
 
 .introduction__header {
   color: #343d33;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .introduction__paragraph {
@@ -164,38 +158,91 @@ button {
   line-height: 150%;
   font-weight: 300;
   padding: 16px 0 24px 0;
-  text-transform:capitalize;
-}
-
-.introduction__photo {
-  width: 100%;
+  text-transform: capitalize;
 }
 
 .primary_button_small {
   background-color: #475f45;
   color: #fff;
-  text-transform: uppercase;
   padding: 15px 30px;
   border: 0;
-  font-weight: 700;
 }
 
 .secondary_button_small {
-  background-color: #fff;
+  background-color: transparent;
   color: #475f45;
-  text-transform: uppercase;
   padding: 13px 28px;
   border: #475f45 2px solid;
-  font-weight: 700;
-  margin-bottom: 56px;
+  /* margin-bottom: 56px; */
 }
 
+.discover__container {
+  background-color: #343d33;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
 
-@media all and (min-width:768px) {
+.discover__photo1,
+.discover__photo2 {
+  width: 100%;
+}
+
+.discover__photo2 {
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.discover__collection {
+  text-align: center;
+  display: grid;
+}
+
+.discover__description {
+  order: 2;
+}
+
+.discover__header {
+  color: #fff;
+  line-height: 37px;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.discover__paragraph {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.button_alternative {
+  margin-bottom: 0;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+.discover__decoration {
+  position: absolute;
+  width: 313px;
+  left: 40%;
+  bottom: 5%;
+  opacity: 7%;
+  overflow: hidden;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) {
   .introduction__header {
     font-size: 45px;
     margin-bottom: 74px;
   }
+
+  .introduction__photo {
+    margin-top: 68px;
+  }
+
   .introduction__paragraph {
     font-size: 22px;
     padding: 0 0 48px 0;
@@ -205,46 +252,74 @@ button {
     padding: 20px 42px;
   }
   .secondary_button_small {
-    margin-left: 8px;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     padding: 20px 42px;
-  }
-  .introduction__photo {
-    width: 388px;
   }
   .introduction__container {
     margin-top: 56px;
-    margin
-    -bottom: 57px;
+    margin-bottom: 57px;
   }
   .menu {
     font-size: 34px;
   }
-  .decoration {
+  .navigation__decoration {
     width: 750px;
     left: 60%;
   }
+  .discover__container {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  .discover__photo2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .discover__description {
+    text-align: start;
+  }
+  .discover__header {
+    margin-bottom: 47px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .discover__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .discover__description {
+    width: 75%;
+  }
+  .discover__decoration {
+    width: 624px;
+    left: 48%;
+    top: 69%;
+    bottom: 0;
+  }
 }
 
-@media all and (min-width:1200px) {
+/* Desktop */
+@media all and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
   .header {
     padding: 0;
+    margin-top: 16px;
   }
   .logo {
     width: 263px;
   }
-  .hamburger_alternative, .hamburger_alternative-checkbox, .hamburger_close, .decoration {
+  .hamburger_open,
+  .hamburger_close,
+  .navigation__decoration {
     display: none;
   }
   .navigation {
     display: flex;
   }
   .navigation__links {
-    display: flex;
     flex-direction: row;
     gap: 0;
   }
@@ -258,7 +333,10 @@ button {
     padding: 15px 30px;
   }
   .navigation__links_element:hover {
-    border: #475F45 2px solid;
+    border: #475f45 2px solid;
+  }
+  .navigation__links li:last-of-type {
+    margin-top: 0;
   }
   .introduction__container {
     margin-top: 49px;
@@ -287,5 +365,42 @@ button {
   }
   .secondary_button_small {
     margin-bottom: 0;
+  }
+  .discover__collection {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 62px;
+  }
+  .discover__photo1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .discover__photo2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    /* dlaczego nie działa? */
+    margin: 0;
+  }
+  .discover__description {
+    width: 100%;
+    /* dlaczego nie działa width: 100% i zostaje ciągle 75%? */
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .discover__decoration {
+    width: 534px;
+    left: 60%;
+    top: 35%;
+  }
+  .discover__header {
+    margin: 0;
+  }
+  .discover__paragraph {
+    margin: 0;
   }
 }
