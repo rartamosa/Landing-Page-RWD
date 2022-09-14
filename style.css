@@ -91,7 +91,7 @@ button {
   position: absolute;
   width: 434px;
   left: 50%;
-  top: 60%;
+  top: 65%;
 }
 
 .navigation__collection {
@@ -173,11 +173,14 @@ button {
   color: #475f45;
   padding: 13px 28px;
   border: #475f45 2px solid;
-  /* margin-bottom: 56px; */
+}
+.discover {
+  background-color: #343d33;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .discover__container {
-  background-color: #343d33;
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
@@ -229,7 +232,6 @@ button {
   left: 40%;
   bottom: 5%;
   opacity: 7%;
-  overflow: hidden;
 }
 
 /* Tablet */
@@ -252,7 +254,6 @@ button {
     padding: 20px 42px;
   }
   .secondary_button_small {
-    /* margin-bottom: 48px; */
     padding: 20px 42px;
   }
   .introduction__container {
@@ -264,7 +265,8 @@ button {
   }
   .navigation__decoration {
     width: 750px;
-    left: 60%;
+    left: 59%;
+    top: 55%;
   }
   .discover__container {
     padding-top: 57px;
@@ -293,7 +295,7 @@ button {
   .discover__decoration {
     width: 624px;
     left: 48%;
-    top: 69%;
+    top: 75%;
     bottom: 0;
   }
 }
@@ -301,8 +303,9 @@ button {
 /* Desktop */
 @media all and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
   .header {
     padding: 0;
@@ -366,25 +369,26 @@ button {
   .secondary_button_small {
     margin-bottom: 0;
   }
+  .discover {
+    padding: 96px 0;
+  }
   .discover__collection {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
     row-gap: 62px;
   }
   .discover__photo1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .discover__photo2 {
+  .discover__photo1_alternative {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    /* dlaczego nie działa? */
+  }
+  .discover__photo2 {
     margin: 0;
   }
   .discover__description {
     width: 100%;
-    /* dlaczego nie działa width: 100% i zostaje ciągle 75%? */
     grid-column: 2 / 3;
     grid-row: 1 /2;
     display: flex;
@@ -394,8 +398,8 @@ button {
   }
   .discover__decoration {
     width: 534px;
-    left: 60%;
-    top: 35%;
+    left: 59%;
+    top: 32%;
   }
   .discover__header {
     margin: 0;
