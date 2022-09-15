@@ -484,18 +484,17 @@ button {
     padding-bottom: 50px;
   }
   .prefooter__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
   .prefooter__description {
     text-align: start;
-    /* width: 69%; */
+    width: 221px;
   }
   .prefooter__connect {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    grid-column: 3 / 4;
+    align-items: start;
   }
 }
 
@@ -640,6 +639,12 @@ button {
     padding-top: 42px;
   }
   .prefooter__description {
-    width: 69%;
+    width: 269px;
+  }
+  .prefooter__connect {
+    width: 192px;
+  }
+  .prefooter__header {
+    align-self: start;
   }
 }
