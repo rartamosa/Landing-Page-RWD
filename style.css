@@ -34,7 +34,7 @@ button {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -180,6 +180,7 @@ button {
   background-color: #343d33;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .discover__container {
@@ -315,6 +316,56 @@ button {
   margin-bottom: 20px;
 }
 
+.prefooter {
+  background-color: #414840;
+  padding: 48px 0;
+}
+
+.prefooter__container {
+  text-align: center;
+}
+
+.prefooter__logo {
+  width: 221px;
+  margin-bottom: 20px;
+}
+
+.prefooter__copy {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.prefooter__header {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.prefooter__icons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.prefooter__icon {
+  width: 24px;
+}
+
+.footer {
+  padding: 29px 0;
+  background-color: #343d33;
+}
+
+.footer__description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+
 /* Tablet */
 @media all and (min-width: 768px) {
   .introduction__header {
@@ -376,7 +427,7 @@ button {
   .discover__decoration {
     width: 624px;
     left: 48%;
-    top: 75%;
+    top: 67%;
     bottom: 0;
   }
   .blog {
@@ -389,6 +440,9 @@ button {
   }
   .blog__nav {
     justify-content: start;
+  }
+  .blog__header_line {
+    min-width: 131px;
   }
   .blog__newest_post {
     padding: 61px 0 65px 0;
@@ -425,6 +479,23 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .prefooter {
+    padding-bottom: 50px;
+  }
+  .prefooter__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .prefooter__description {
+    text-align: start;
+    /* width: 69%; */
+  }
+  .prefooter__connect {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    grid-column: 3 / 4;
   }
 }
 
@@ -489,6 +560,7 @@ button {
   .introduction__header {
     margin-bottom: 16px;
     font-size: 57px;
+    line-height: 63px;
   }
   .introduction__paragraph {
     padding-bottom: 32px;
@@ -534,5 +606,40 @@ button {
   }
   .discover__paragraph {
     margin: 0;
+  }
+  .blog__posts_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+  .blog__post_photo2 {
+    display: block;
+  }
+  .blog__header {
+    grid-column: 1 / 3;
+  }
+  .blog__nav {
+    grid-column: 1 / 3;
+    margin-bottom: 52px;
+  }
+  .blog__button {
+    padding: 4px 17px 4px 19px;
+  }
+  .blog__newest_post {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .blog__newest_post_description {
+    padding: 0;
+    height: 25%;
+  }
+  .prefooter {
+    padding-bottom: 60px;
+    padding-top: 42px;
+  }
+  .prefooter__description {
+    width: 69%;
   }
 }

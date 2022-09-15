@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio project - RWD</title>
+    <title>Landing Page RWD</title>
   </head>
   <body>
     <header class="header">
@@ -175,141 +175,184 @@
     </section>
     <section class="blog">
       <article class="container blog__container">
-        <h2 class="blog__header">News &#38; Updates</h2>
-        <div class="blog__nav">
-          <hr class="blog__header_line" />
-          <button class="secondary_button_small blog__button">
-            view all posts
-          </button>
-          <span class="blog__button_icon"></span>
-        </div>
-        <div class="blog__newest_post">
-          <picture>
-            <source
-              media="(max-width:767px)"
-              srcset="./assets/botanical_garden_mobile.png"
-            />
-            <source
-              media="(max-width:1199px)"
-              srcset="./assets/botanical_garden_tablet.png"
-            />
-            <source
-              media="(min-width:1200px)"
-              srcset="./assets/botanical_garden_desktop.png"
-            />
-            <img
-              src="./assets/botanical_garden_desktop.png"
-              alt="Botanical garden"
-              title="Botanical garden"
-              class="blog__post_photo1"
-            />
-          </picture>
-          <span class="blog__newest_post_description">
-          <h3 class="blog__post_title">Plants Around Us</h3>
-          <p class="blog__post_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit...
-          </p>
-          <span class="blog__post_date">December 23, 2021</span>
-        </span>
-      </div>
-        <div class="blog__collection">
-          <div class="blog__collection_nth_post">
-            <picture>
-              <source
-                media="(max-width:767px)"
-                srcset="./assets/2nd_blog_post_mobile.png"
-              />
-              <source
-                media="(max-width:1199px)"
-                srcset="./assets/2nd_blog_post_tablet.png"
-              />
-              <source
-                media="(min-width:1200px)"
-                srcset="./assets/2nd_blog_post_desktop.png"
-              />
-              <img
-                src="./assets/2nd_blog_post_desktop.png"
-                alt="Tomatoes"
-                title="Tomatoes"
-                class="blog__post_photo2 tomatoes"
-              />
-            </picture>
-            <div class="blog__collection_post_description">
-              <h3 class="blog__post_title">Lush Gardens</h3>
-              <p class="blog__post_description">
-                Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
-                Tincidunt facilisis nunc lorem
-              </p>
-              <span class="blog__post_date">December 16, 2021</span>
-            </div>
+        <div class="blog__posts_table">
+          <h2 class="blog__header">News &#38; Updates</h2>
+          <div class="blog__nav">
+            <hr class="blog__header_line" />
+            <button class="secondary_button_small blog__button">
+              view all posts
+            </button>
+            <span class="blog__button_icon"></span>
           </div>
-          <hr class="blog__line" />
-          <div class="blog__collection_nth_post">
+          <div class="blog__newest_post">
             <picture>
               <source
                 media="(max-width:767px)"
-                srcset="./assets/3rd_blog_post_mobile.png"
+                srcset="./assets/botanical_garden_mobile.png"
               />
               <source
                 media="(max-width:1199px)"
-                srcset="./assets/3rd_blog_post_tablet.png"
+                srcset="./assets/botanical_garden_tablet.png"
               />
               <source
                 media="(min-width:1200px)"
-                srcset="./assets/3rd_blog_post_desktop.png"
+                srcset="./assets/botanical_garden_desktop.png"
               />
               <img
-                src="./assets/3rd_blog_post_desktop.png"
-                alt="Flower store"
-                title="Flower store"
-                class="blog__post_photo2"
+                src="./assets/botanical_garden_desktop.png"
+                alt="Botanical garden"
+                title="Botanical garden"
+                class="blog__post_photo1"
               />
             </picture>
-            <div class="blog__collection_post_description">
-              <h3 class="blog__post_title">Exotic Nature</h3>
+            <span class="blog__newest_post_description">
+              <h3 class="blog__post_title">Plants Around Us</h3>
               <p class="blog__post_description">
-                Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
-                Tincidunt facilisis nunc lorem
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit...
               </p>
-              <span class="blog__post_date">November 11, 2021</span>
-            </div>
+              <span class="blog__post_date">December 23, 2021</span>
+            </span>
           </div>
-          <hr class="blog__line" />
-          <div class="blog__collection_nth_post">
-            <picture>
-              <source
-                media="(max-width:767px)"
-                srcset="./assets/4th_blog_post_mobile.png"
-              />
-              <source
-                media="(max-width:1199px)"
-                srcset="./assets/4th_blog_post_tablet.png"
-              />
-              <source
-                media="(min-width:1200px)"
-                srcset="./assets/4th_blog_post_desktop.png"
-              />
-              <img
-                src="./assets/4th_blog_post_desktop.png"
-                alt="Moss"
-                title="Moss"
-                class="blog__post_photo2"
-              />
-            </picture>
-            <div class="blog__collection_post_description">
-              <h3 class="blog__post_title">It Starts with Soil</h3>
-              <p class="blog__post_description">
-                Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
-                Tincidunt facilisis nunc lorem
-              </p>
-              <span class="blog__post_date">November 3, 2021</span>
+          <div class="blog__collection">
+            <div class="blog__collection_nth_post">
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="./assets/2nd_blog_post_mobile.png"
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="./assets/2nd_blog_post_tablet.png"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./assets/2nd_blog_post_desktop.png"
+                />
+                <img
+                  src="./assets/2nd_blog_post_desktop.png"
+                  alt="Tomatoes"
+                  title="Tomatoes"
+                  class="blog__post_photo2 tomatoes"
+                />
+              </picture>
+              <div class="blog__collection_post_description">
+                <h3 class="blog__post_title">Lush Gardens</h3>
+                <p class="blog__post_description">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <span class="blog__post_date">December 16, 2021</span>
+              </div>
+            </div>
+            <hr class="blog__line" />
+            <div class="blog__collection_nth_post">
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="./assets/3rd_blog_post_mobile.png"
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="./assets/3rd_blog_post_tablet.png"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./assets/3rd_blog_post_desktop.png"
+                />
+                <img
+                  src="./assets/3rd_blog_post_desktop.png"
+                  alt="Flower store"
+                  title="Flower store"
+                  class="blog__post_photo2"
+                />
+              </picture>
+              <div class="blog__collection_post_description">
+                <h3 class="blog__post_title">Exotic Nature</h3>
+                <p class="blog__post_description">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <span class="blog__post_date">November 11, 2021</span>
+              </div>
+            </div>
+            <hr class="blog__line" />
+            <div class="blog__collection_nth_post">
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="./assets/4th_blog_post_mobile.png"
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="./assets/4th_blog_post_tablet.png"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./assets/4th_blog_post_desktop.png"
+                />
+                <img
+                  src="./assets/4th_blog_post_desktop.png"
+                  alt="Moss"
+                  title="Moss"
+                  class="blog__post_photo2"
+                />
+              </picture>
+              <div class="blog__collection_post_description">
+                <h3 class="blog__post_title">It Starts with Soil</h3>
+                <p class="blog__post_description">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <span class="blog__post_date">November 3, 2021</span>
+              </div>
             </div>
           </div>
         </div>
       </article>
     </section>
+    <section class="prefooter">
+      <article class="container prefooter__container">
+        <div class="prefooter__description">
+          <img
+            src="./assets/footer_logo.png"
+            alt="Company"
+            title="Company"
+            class="prefooter__logo"
+          />
+          <p class="prefooter__copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="prefooter__connect">
+          <h4 class="prefooter__header">Connect</h4>
+          <div class="prefooter__icons">
+          <img src="./assets/twitter.png"
+            alt="Twitter"
+            title="Twitter"
+            class="prefooter__icon">
+            <img src="./assets/facebook.png" 
+            alt="Facebook"
+            title="Facebook"
+            class="prefooter__icon">
+            <img src="./assets/linkedin.png" 
+            alt="LinkedIn"
+            title="LinkedIn"
+            class="prefooter__icon">
+            <img src="./assets/mail.png"
+            alt="Email"
+            title="Email"
+            class="prefooter__icon">
+          </div>  
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <p class="footer__description">
+        &copy; 2021 Mist Gardens.
+      </p>
+    </footer>
   </body>
   <script src="./app.js"></script>
 </html>
