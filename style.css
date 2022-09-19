@@ -7,7 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
-  /* padding-bottom: env(safe-area-inset-bottom); */
 }
 
 h1,
@@ -37,10 +36,6 @@ button {
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.header {
-  /* padding: 0 15px; */
 }
 
 .container {
@@ -94,7 +89,7 @@ button {
   position: absolute;
   width: 434px;
   left: 50%;
-  top: 65%;
+  top: 58%;
 }
 
 .navigation__collection {
@@ -174,7 +169,7 @@ button {
 .secondary_button_small {
   background-color: transparent;
   color: #475f45;
-  padding: 13px 28px;
+  padding: 13px 30px;
   border: #475f45 2px solid;
 }
 .discover {
@@ -233,8 +228,8 @@ button {
 .discover__decoration {
   position: absolute;
   width: 313px;
-  left: 40%;
-  bottom: 5%;
+  left: 48%;
+  bottom: 1%;
   opacity: 0.07;
 }
 
@@ -298,6 +293,7 @@ button {
   line-height: 24px;
   color: #414840;
   padding-bottom: 12px;
+  font-weight: 400;
 }
 
 .blog__post_date {
@@ -387,7 +383,7 @@ button {
     padding: 20px 42px;
   }
   .secondary_button_small {
-    padding: 20px 42px;
+    padding: 19px 42px;
   }
   .introduction__container {
     margin-top: 56px;
@@ -399,7 +395,7 @@ button {
   .navigation__decoration {
     width: 750px;
     left: 59%;
-    top: 55%;
+    top: 51%;
   }
   .discover__container {
     padding-top: 57px;
@@ -427,8 +423,8 @@ button {
   }
   .discover__decoration {
     width: 624px;
-    left: 48%;
-    top: 67%;
+    left: 56%;
+    top: 73%;
     bottom: 0;
   }
   .blog {
@@ -456,7 +452,7 @@ button {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 0;
   }
   .blog__post_description {
     text-align: left;
@@ -480,6 +476,9 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .blog__line {
+    width: 94%;
   }
   .prefooter {
     padding-bottom: 50px;
@@ -598,7 +597,7 @@ button {
   }
   .discover__decoration {
     width: 534px;
-    left: 59%;
+    left: 62%;
     top: 32%;
   }
   .discover__header {
@@ -606,6 +605,9 @@ button {
   }
   .discover__paragraph {
     margin: 0;
+  }
+  .blog {
+    padding: 96px 0;
   }
   .blog__posts_table {
     display: grid;
@@ -634,6 +636,9 @@ button {
   .blog__newest_post_description {
     padding: 0;
     height: 25%;
+  }
+  .blog__line {
+    width: 100%;
   }
   .prefooter {
     padding-bottom: 60px;
