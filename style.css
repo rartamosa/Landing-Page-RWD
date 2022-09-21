@@ -53,6 +53,19 @@ button {
 
 .navigation {
   display: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: -100px;
+  left: 100%;
+  background: #475f45;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .logo {
@@ -60,26 +73,16 @@ button {
 }
 
 .navigation_open {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: -100px;
   left: 0;
-  background: #475f45;
-  color: #fff;
-  overflow: hidden;
+  opacity: 1;
 }
 
-.hamburger_open {
+.hamburger {
   width: 24px;
   height: 24px;
 }
 
 .hamburger_close {
-  width: 24px;
-  height: 24px;
   position: absolute;
   right: 15px;
   top: 33px;
@@ -88,17 +91,14 @@ button {
 .navigation__decoration {
   position: absolute;
   width: 434px;
-  left: 50%;
+  right: -248px;
   top: 58%;
 }
 
-.navigation__collection {
-  text-align: center;
-}
-
-.menu {
+.navigation__heading {
   color: #fff;
   padding: 32px 0 72px 0;
+  text-align: center;
 }
 
 .navigation__links {
@@ -159,14 +159,14 @@ button {
   text-transform: capitalize;
 }
 
-.primary_button_small {
+.primary_button {
   background-color: #475f45;
   color: #fff;
   padding: 15px 30px;
   border: 0;
 }
 
-.secondary_button_small {
+.secondary_button {
   background-color: transparent;
   color: #475f45;
   padding: 13px 30px;
@@ -175,8 +175,7 @@ button {
 .discover {
   background-color: #343d33;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .discover__container {
@@ -196,12 +195,12 @@ button {
 }
 
 .discover__collection {
-  text-align: center;
   display: grid;
 }
 
 .discover__description {
   order: 2;
+  text-align: center;
 }
 
 .discover__header {
@@ -276,8 +275,8 @@ button {
   padding-top: 22px;
 }
 
-.blog__post_photo1,
-.blog__post_photo2 {
+.blog__post-photo1,
+.blog__post-photo2 {
   width: 100%;
   padding-bottom: 20px;
 }
@@ -378,23 +377,23 @@ button {
     font-size: 22px;
     padding: 0 0 48px 0;
   }
-  .primary_button_small {
+  .primary_button {
     margin-right: 8px;
     padding: 20px 42px;
   }
-  .secondary_button_small {
+  .secondary_button {
     padding: 19px 42px;
   }
   .introduction__container {
     margin-top: 56px;
     margin-bottom: 57px;
   }
-  .menu {
+  .navigation__heading {
     font-size: 34px;
   }
   .navigation__decoration {
     width: 750px;
-    left: 59%;
+    right: -436px;
     top: 51%;
   }
   .discover__container {
@@ -462,7 +461,7 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
   }
-  .blog__post_photo2 {
+  .blog__post-photo2 {
     margin: 0;
     padding: 0;
   }
@@ -512,7 +511,7 @@ button {
   .logo {
     width: 263px;
   }
-  .hamburger_open,
+  .hamburger,
   .hamburger_close,
   .navigation__decoration {
     display: none;
@@ -524,7 +523,7 @@ button {
     flex-direction: row;
     gap: 0;
   }
-  .menu {
+  .navigation__heading {
     display: none;
   }
   .navigation__links_element {
@@ -565,7 +564,7 @@ button {
     padding-bottom: 32px;
     font-size: 25px;
   }
-  .secondary_button_small {
+  .secondary_button {
     margin-bottom: 0;
   }
   .discover {
@@ -580,7 +579,7 @@ button {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .discover__photo1_alternative {
+  .discover__photo1-alternative {
     grid-column: 1 / 3;
   }
   .discover__photo2 {
@@ -614,7 +613,7 @@ button {
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
   }
-  .blog__post_photo2 {
+  .blog__post-photo2 {
     display: block;
   }
   .blog__header {
